@@ -3,6 +3,7 @@ package seedu.addressbook;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+import java.util.Stack;
 
 import seedu.addressbook.commands.Command;
 import seedu.addressbook.commands.CommandResult;
@@ -24,7 +25,7 @@ public class Main {
 
     /** Version info of the program. */
     public static final String VERSION = "AddressBook Level 2 - Version 1.0";
-
+    public static Stack<String> CommandHistory = new Stack<>();
     private TextUi ui;
     private StorageFile storage;
     private AddressBook addressBook;
@@ -83,6 +84,7 @@ public class Main {
         Command command;
         do {
             String userCommandText = ui.getUserCommand();
+            CommandHistory.push(userCommandText);
             command = new Parser().parseCommand(userCommandText);
             CommandResult result = executeCommand(command);
             recordResult(result);
