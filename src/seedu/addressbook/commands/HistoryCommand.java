@@ -5,6 +5,9 @@ import java.util.Stack;
 
 import static seedu.addressbook.Main.CommandHistory;
 
+/**
+ * Displays all the past commands inputted by the user.
+ */
 public class HistoryCommand extends Command{
 
     public static final String COMMAND_WORD = "history";
