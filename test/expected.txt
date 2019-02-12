@@ -29,6 +29,13 @@
 || Example: help
 || exit: Exits the program.
 || Example: exit
+|| Shows all the commands history in reverse chronological order.
+|| Example: history
+|| ===================================================
+|| Enter command: || [Command entered:  history]
+||   history
+||   sfdfd
+|| Displaying all past commands!
 || ===================================================
 || Enter command: || [Command entered:  delete 1]
 || The person index provided is invalid

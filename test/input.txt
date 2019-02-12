@@ -4,6 +4,7 @@
 
   # should recognise invalid command
   sfdfd
+  history
 
 ##########################################################
 # commands using list index before any listing created
