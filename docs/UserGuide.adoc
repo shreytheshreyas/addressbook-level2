@@ -111,6 +111,22 @@ Deletes the 2nd person in the address book.
 `delete 1` +
 Deletes the 1st person in the results of the `find` command.
 
+== Listing all previous commands: `history`
+
+Displays all user entered commands in reverse chronological order. +
+Format: `history`
+
+****
+Shows all previous commands, with the latest ones first.
+****
+
+Examples:
+
+* `history` +
+`delete 2` +
+`list`
+
+
 == View non-private details of a person : `view`
 
 Displays the non-private details of the specified person. +
